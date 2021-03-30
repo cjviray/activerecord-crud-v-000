@@ -18,9 +18,9 @@ def can_be_created_with_a_hash_of_attributes
       release_date: 1973,
       director: "George Roy Hill",
       lead: "Paul Newman",
-      in_theaters: false
+      in_theatres: false
   }
-  movie = Movie.create
+  movie = Movie.new(attributes)
 end
 
 def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
